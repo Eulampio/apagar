@@ -1,34 +1,21 @@
-.txt-frente-de-road_map{
-font-family: "Quatro-Medium", sans-serif;
-padding: 20px;
-line-height: 1.6;
-margin-right: 10%;
-margin-left: 50px;
-color:white ;
-}
 
-.container_home_quatro{
-background-color: black;
-display: grid;
-grid-template-columns: 50% 50%;
-align-items: center;
-height: 100vh;
-}
-.img-frente-de-atuacao-img_road_map{width: 720px;
-height: 420px;
-border-radius: 10px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-object-fit: cover ¨
+.edita_perguntad_adm {
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #000; /* linha inferior como "uma linha" */
+    outline: none;
+    padding: 5px;
+  }
 
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
 
-}
-.btn_faca-o-seu-diagnostico{
-position: absolute;
-align-items: center;
-top: 71px;
-
-margin-left: 650px;
-width: 616px;
-height: 50px;
-
-}
+  button img {
+    display: inline;
+    width: 24px;
+    height: 24px;
+  }
