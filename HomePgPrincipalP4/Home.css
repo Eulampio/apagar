@@ -1,40 +1,34 @@
-.homepg04{
-
-    background-color: black;
-    display: grid;
-    grid-template-columns:  20% 20% 20% 20% 20%;
-    background-color: #034B61;
-
-    
-}
-.bt_FacaoSeuDiagnosticoAqui{
-     position: relative;
-    top: 100px;
-    width: 105rem;
-    height: 4rem; 
-    border: solid 1px #032639;
-    border-radius: 1.25rem;
-    padding-left: 0.75rem;
-    font-family: 'Noto Sans';
-    font-size: 2.75rem;
-    
-    align-content: center;
-    grid-column: span 2/4;
-    
-
-    background-color: #C6FE1F;
-}
-.bt_FacaoSeuDiagnosticoAqui:hover{
-    transition: 2s;   
-    
-    background-color: #032639;
-
-  
-
+.txt-frente-de-road_map{
+font-family: "Quatro-Medium", sans-serif;
+padding: 20px;
+line-height: 1.6;
+margin-right: 10%;
+margin-left: 50px;
+color:white ;
 }
 
-.tx_textoHome04{
+.container_home_quatro{
+background-color: black;
+display: grid;
+grid-template-columns: 50% 50%;
+align-items: center;
+height: 100vh;
+}
+.img-frente-de-atuacao-img_road_map{width: 720px;
+height: 420px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+object-fit: cover ¨
 
-font-size: 2.5rem;
+
+}
+.btn_faca-o-seu-diagnostico{
+position: absolute;
+align-items: center;
+top: 71px;
+
+margin-left: 650px;
+width: 616px;
+height: 50px;
 
 }
