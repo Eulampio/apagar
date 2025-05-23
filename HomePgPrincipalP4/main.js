@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Adicionar Inputs</title>
-  <link rel="stylesheet" href="Home.css">
-  <style>
-    .edita_perguntad_adm {
-      margin-right: 8px;
-    }
-    button {
-      margin-left: 4px;
-    }
-  </style>
-</head>
-<body>
 
-  <div id="container-perguntas"></div>
-  <button onclick="adicionarPergunta()">Adicionar Pergunta</button>
-
-  <script>
     const criarCampoPergunta = (indice) => {
       return `
         <form action="#" method="post"> 
@@ -41,6 +21,3 @@
       container.insertAdjacentHTML("beforeend", criarCampoPergunta(contador));
       contador++;
     }
-  </script>
-</body>
-</html>

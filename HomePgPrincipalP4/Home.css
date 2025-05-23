@@ -1,4 +1,6 @@
 
+
+
 .edita_perguntad_adm {
     width: 300px;
     border: none;
@@ -19,3 +21,10 @@
     width: 24px;
     height: 24px;
   }
+
+      .edita_perguntad_adm {
+      margin-right: 8px;
+    }
+    button {
+      margin-left: 4px;
+    }
