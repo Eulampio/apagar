@@ -19,6 +19,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  border-bottom: 1px solid #000; /* A linha passa por baixo de tudo */
+  padding-bottom: 5px; /* Espaço entre a linha e os elementos */
 }
 
 .perguntas_adm_div_primaria{
@@ -28,9 +30,11 @@
 
 .edita_perguntad_adm {
     width: 500px;
-    border: none;
-    border-bottom: 1px solid #000; /* linha inferior como "uma linha" */
-    outline: none;
+   border: none;           /* Remove todas as bordas */
+  outline: none;          /* Remove o contorno quando o input está em foco */
+  box-shadow: none;       /* Garante que não haja sombra */
+  background: transparent; /* (inferior como "uma linha" */
+   
     padding: 5px;
   }
 
