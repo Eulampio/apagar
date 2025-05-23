@@ -1,46 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Adicionar Inputs</title>
-  <link rel="stylesheet" href="Home.css">
-  <style>
-    .edita_perguntad_adm {
-      margin-right: 8px;
-    }
-    button {
-      margin-left: 4px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.css">
 </head>
 <body>
+  <div class="perguntas_adm_div_primaria" >
+<div class="perguntas_adm">     
+  <label  for="text">1-</label>
+  <input  class="edita_perguntad_adm" type="text" name="nome" id="nome" required>
+  <button class="btn_editar_pergunta btn_editar_excluir"><img class="imagem_icon_delet_edit" src="caneta editavel icone.svg" alt=""></button> 
+  <button class="btn_deletar_pergunta btn_editar_excluir"><img  class="imagem_icon_delet_edit"  src="Lixeira 5.png" alt=""></button>
+</div>
+<div class="perguntas_adm">     
+  <label  for="text">2-</label>
+  <input  class="edita_perguntad_adm" type="" name="nome" id="nome" required>
+  <button class="btn_editar_pergunta btn_editar_excluir"><img class="imagem_icon_delet_edit" src="caneta editavel icone.svg" alt=""></button> 
+  <button class="btn_deletar_pergunta btn_editar_excluir"><img class="imagem_icon_delet_edit"  src="Lixeira 5.png" alt=""></button>
+</div>     
+<div class="perguntas_adm">
+ 
+  <label  for="text">3-</label>
+  <input  class="edita_perguntad_adm" type="text" name="nome" id="nome" required>
+  <button class="btn_editar_pergunta btn_editar_excluir"><img class="imagem_icon_delet_edit" src="caneta editavel icone.svg" alt=""></button> 
+  <button class="btn_deletar_pergunta btn_editar_excluir"><img class="imagem_icon_delet_edit"  src="Lixeira 5.png" alt=""></button> 
+</div> 
 
-  <div id="container-perguntas"></div>
-  <button onclick="adicionarPergunta()">Adicionar Pergunta</button>
-
-  <script>
-    const criarCampoPergunta = (indice) => {
-      return `
-        <form action="#" method="post"> 
-          <label for="nome_completo_${indice}">${indice}-</label>
-          <input class="edita_perguntad_adm" type="text" name="nome_completo_${indice}" id="nome_completo_${indice}" required> 
-          <button type="button" class="img_edite_pergunta">
-            <img src="edit_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Editar">
-          </button>
-          <button type="button">
-            <img src="delete_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Excluir">
-          </button>
-        </form>
-      `;
-    };
-
-    let contador = 1;
-
-    function adicionarPergunta() {
-      const container = document.getElementById("container-perguntas");
-      container.insertAdjacentHTML("beforeend", criarCampoPergunta(contador));
-      contador++;
-    }
-  </script>
+</div>
 </body>
 </html>
