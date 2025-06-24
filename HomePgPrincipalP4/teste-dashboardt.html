@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Redondo</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ecf0f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #34495e;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      flex: 1 1 350px;
+      max-width: 500px;
+      padding: 25px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    canvas {
+      width: 100% !important;
+      height: 300px !important;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>📊 Dashboard Visual</h1>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h3>Vendas Mensais</h3>
+    <canvas id="chart1"></canvas>
+  </div>
+  <div class="card">
+    <h3>Usuários Ativos</h3>
+    <canvas id="chart2"></canvas>
+  </div>
+</div>
+
+<script>
+  const ctx1 = document.getElementById('chart1').getContext('2d');
+  new Chart(ctx1, {
+    type: 'bar',
+    data: {
+      labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+      datasets: [{
+        label: 'Vendas',
+        data: [120, 190, 300, 500, 200, 300],
+        backgroundColor: 'rgba(52, 152, 219, 0.7)',
+        borderRadius: 10
+      }]
+    },
+    options: {
+      responsive: true
+    }
+  });
+
+  const ctx2 = document.getElementById('chart2').getContext('2d');
+  new Chart(ctx2, {
+    type: 'line',
+    data: {
+      labels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex'],
+      datasets: [{
+        label: 'Usuários',
+        data: [30, 45, 28, 60, 75],
+        borderColor: 'rgba(46, 204, 113, 1)',
+        backgroundColor: 'rgba(46, 204, 113, 0.2)',
+        fill: true,
+        tension: 0.4
+      }]
+    },
+    options: {
+      responsive: true
+    }
+  });
+</script>
+
+</body>
+</html>
