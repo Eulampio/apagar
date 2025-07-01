@@ -25,4 +25,3 @@ BtnCloseModal.addEventListener('click', () => {
 })
 
 
-
